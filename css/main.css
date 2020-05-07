@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "calibri";
+  src: url("./Fonts/Calibri Regular.ttf");    
+}
+
+body{
+  background-color: gray;
+  margin: 20px 5% 0 5%;
+}
+
+header{
+  background-color: orange;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 25px;
+  font-family: "calibri";
+}
+
+header h1{
+  margin: 0;
+  color: gray;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

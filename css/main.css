@@ -1,23 +1,95 @@
-@font-face {
-  font-family: "Calibri";
-  src: url("./Fonts/CalibriRegular.ttf");    
-}
-
 body{
   background-color: rgb(166, 166, 166);
   margin: 20px 5% 0 5%;
 }
 
 header{
-  background-color: orange;
+  background-color: rgb(237, 125, 49);
   text-align: center;
-  padding: 8px 0;
-  font-size: 25px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px 0;
+  
 }
 
 header h1{
   margin: 0;
-  color: gray;
+  font-size: 54pt;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(166, 166, 166);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav ul{
+  list-style-type: none;
+  background-color: white;
+  padding: 0;
+  margin: 0
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 0;
+  padding: 5px 0px 5px 65px;
+  background-color: rgb(68, 114, 196);
+}
+
+nav ul li a{
+  color:white;
+  text-decoration: none;
+  font-size: 18pt;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li a:hover{
+  color:rgb(140, 171, 226);
+}
+
+nav ul li img{
+  width: 22px; 
+  height: 22px;
+}
+
+nav ul li input{
+  width: 200px;
+}
+
+main{
+  text-align: justify;
+}
+
+main h3{
+  text-align: center;
+}
+
+main h4{
+  text-align: center;
+}
+
+main p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrapper{
+  width: 95%;
+  margin: 0px auto;
+}
+
+article .columL{
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding: 0px 15px;
+}
+
+article .columR{
+  display: inline-block;
+  width: 35%;
+  vertical-align: middle;
+  padding: 0px 15px;
+}
+
+article img{
+  max-width: 100%;
+  max-height: 100%;
+  margin: 10%;
 }

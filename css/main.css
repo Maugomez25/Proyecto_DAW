@@ -10,13 +10,14 @@
 
 body{
   background-color: rgb(166, 166, 166);
-  margin: 20px 5% 0 5%;
+  margin: 2% 5% 0 5%;
 }
 
 header{
   background-color: rgb(237, 125, 49);
   text-align: center;
   padding: 10px 0;
+  width: 100%;
   
 }
 
@@ -26,6 +27,10 @@ header h1{
   font-family: "calibrib";
   color: rgb(166, 166, 166);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav{
+  width: 100%;
 }
 
 nav ul{
@@ -38,7 +43,9 @@ nav ul{
 nav ul li{
   display: inline-block;
   margin: 0;
-  padding: 5px 3.5% 5px 3.5%;
+  padding: 5px 0;
+  width: 15.5%;
+  text-align: center;
   background-color: rgb(68, 114, 196);
 }
 
@@ -79,7 +86,7 @@ main h4{
 }
 
 main p{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "calibib";
   font-size: 13pt;
 }
 
@@ -102,3 +109,27 @@ article .columR{
   padding: 0px 60px;
 }
 
+.left{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+
+.right{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+
+article ul li{
+  font-family: "calibib";
+  font-size: 13pt;
+}
+
+article ul li img{
+    display: block;
+    margin: 0 auto;
+    max-width: 30%;
+    width: 30%;
+    padding: 5px 0;
+}

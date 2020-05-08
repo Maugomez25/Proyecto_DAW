@@ -4,9 +4,12 @@
 
     <head>
         <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width , user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
         <title>Tu Autopedia</title>
 
         <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="https://i.icomoon.io/public/temp/3ad8f8c0d3/UntitledProject/style.css">
+
 
     </head>
 
@@ -18,77 +21,89 @@
 
         <nav>
             <ul>
-                <li><h5>Inicio</h5></li>
-                <li><h5>Décadas</h5></li>
-                <li><h5>Marcas</h5></li>
-                <li><h5>Países</h5></li>
-                <li><h5>Cilindrada</h5></li>
+                <li><a href="#">Inicio</a></li
+                ><li><a href="#">Décadas</a></li
+                ><li><a href="#">Marcas</a></li
+                ><li><a href="#">Países</a></li
+                ><li><a href="#">Cilindrada</a></li
+                ><li style="background-color: white; padding-left: 5px; width: 23px;"><img src="./Pictures/lupa.png" alt="Busqueda"/></li>
+                <li style="background-color: white;"><input type="text"></li>
             </ul>
         </nav>
 
-        <main>
+        <main class="wrapper">
 
-            <article>
-                <h3>Bienvenido!</h3>
-                <p>El automóvil es un vehículo, un medio de transporte que te
-                    permite moverte más rápido y llegar a tu destino cómodamente.
-                    Este sitio no es para las personas que viven el auto basados en
-                    este concepto. Este sitio esta pensado para nosotros que
-                    concebimos el automóvil como una pasión y un estilo de vida.
-                    Que vemos al auto como un ente con vida porque cambia y
-                    evoluciona con el transcurrir de las décadas. Este sitio es para
-                    todos aquellos que vemos un auto como un elemento de
-                    expresión de la libertad humana. Para todos los amantes de los
-                    autos, este sitio fue creado para ustedes y su disfrute. En hora
-                    buena y sean bienvenidos a Tu Autopedia.</p>
-                    <img src="./Pictures/shelby_cobra.png" alt="Shelby cobra">
-            </article>
-
-            <article>
-                <h4>Descripción del sitio</h4>
-                <p>Este sitio web es una enciclopedia con información, tanto técnica como
-                    histórica, de los autos más representativos e innovadores de diferentes
-                    décadas. Esperamos que disfrutes de muchas horas explorando el
-                    contenido de nuestro página y te documentes sobre el basto mundo de
-                    las cuatro ruedas.
-                    Para navegar en el sitio, al inicio de la página se encuentra una barra
-                    con diferentes apartados que te servirán para poder encontrar más fácil
-                    algún modelo en específico o conocer de forma más ordenada la
-                    historia de los autos.
-                    Puedes buscar autos por la década en que fueron presentados, marca,
-                    país de origen e incluso por el tamaño de su motor o cilindrada.
-                    La página también Cuenta con un botón de búsqueda en caso de que
-                    requieras una búsqueda más precisa.</p>
-                    <img src="./Pictures/car_brands.png" alt="Marcas de coches">
-            </article>
+          <article>
+            <div class="columL">
+              <h3 class="Subtitulo">Bienvenido!</h3>
             
-            <article>
-                <h4>Modelos agregados recientemente</h4>
-                <p>En este apartado encontrarás los últimos cinco autos que han sido agregados a Tu
-                    Autopedia. ¿Habías oído hablar de estas máquinas?</p>
-                <ul>
-                    <li>
+              <p>El automóvil es un vehículo, un medio de transporte que te
+                permite moverte más rápido y llegar a tu destino cómodamente.
+                Este sitio no es para las personas que viven el auto basados en
+                este concepto. Este sitio esta pensado para nosotros que
+                concebimos el automóvil como una pasión y un estilo de vida.
+                Que vemos al auto como un ente con vida porque cambia y
+                evoluciona con el transcurrir de las décadas. Este sitio es para
+                todos aquellos que vemos un auto como un elemento de
+                expresión de la libertad humana. Para todos los amantes de los
+                autos, este sitio fue creado para ustedes y su disfrute. En hora
+                buena y sean bienvenidos a Tu Autopedia.</p>
+            </div><div class="columR">
+              <img style="max-width: 100%; max-height: 100%; margin-top: 25%;" src="./Pictures/shelby_cobra.png" alt="Shelby cobra">
+            </div> 
+          </article>             
+          
+          <article>
+          <div class="columL">
+            <h4 class="Subtitulo2">Descripción del sitio</h4>
+              <p>Este sitio web es una enciclopedia con información, tanto técnica como
+                  histórica, de los autos más representativos e innovadores de diferentes
+                  décadas. Esperamos que disfrutes de muchas horas explorando el
+                  contenido de nuestro página y te documentes sobre el basto mundo de
+                  las cuatro ruedas.<br/>
+                  Para navegar en el sitio, al inicio de la página se encuentra una barra
+                  con diferentes apartados que te servirán para poder encontrar más fácil
+                  algún modelo en específico o conocer de forma más ordenada la
+                  historia de los autos.<br/>
+                  Puedes buscar autos por la década en que fueron presentados, marca,
+                  país de origen e incluso por el tamaño de su motor o cilindrada.
+                  La página también Cuenta con un botón de búsqueda en caso de que
+                  requieras una búsqueda más precisa.</p>
+            </div>
+
+            <div class="columR">
+              <img style="max-width: 80%; max-height: 80%; margin-top: 20%;" src="./Pictures/car_brands.png" alt="Marcas de coches">
+            </div>
+          </article>
+
+          <article>
+              <h4>Modelos agregados recientemente</h4>
+              <p>En este apartado encontrarás los últimos cinco autos que han sido agregados a Tu
+                  Autopedia. ¿Habías oído hablar de estas máquinas?</p>
+
+                  <ul>
+                    <li class="left">
                         Nissan GTR 400R
                         <img src="./Pictures/400r_nismo.jpg" alt="Nissan GTR 400R">
                     </li>
-                    <li>
+                    <li class="right">
+                      Toyota Sprinter Trueno AE86
+                      <img src="./Pictures/toyota_sprinter_trueno.jpg" alt="Toyota Sprinter Trueno AE86">
+                    </li>
+                    <li class="left">
                         Subaru Impreza WRX STI
                         <img src="./Pictures/subaru_impreza_wrx_sti.jpg" alt="Subaru Impreza WRX STI">
                     </li>
-                    <li>
+                    <li class="right">
+                      Porsche 959
+                      <img src="./Pictures/porsche_959.jpg" alt="Porsche 959">
+                    </li>
+                    <li class="left">
                         Honda NSX
                         <img src="./Pictures/Honda_NSX_R_1992.jpg" alt="Honda NSX">
-                    </li>
-                    <li>
-                        Toyota Sprinter Trueno AE86
-                        <img src="./Pictures/toyota_sprinter_trueno.jpg" alt="Toyota Sprinter Trueno AE86">
-                    </li>
-                    <li>
-                        Porsche 959
-                        <img src="./Pictures/porsche_959.jpg" alt="Porsche 959">
-                    </li>
+                    </li>                    
                 </ul>
-            </article>
+          </article>
         </main>
 
         <footer>

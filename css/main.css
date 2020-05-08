@@ -86,7 +86,7 @@ main h4{
 }
 
 main p{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "calibib";
   font-size: 13pt;
 }
 
@@ -121,6 +121,11 @@ article .columR{
   vertical-align: top;
 }
 
+article ul li{
+  font-family: "calibib";
+  font-size: 13pt;
+}
+
 article ul li img{
     display: block;
     margin: 0 auto;
@@ -128,4 +133,3 @@ article ul li img{
     width: 30%;
     padding: 5px 0;
 }
-

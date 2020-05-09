@@ -2,12 +2,12 @@
   font-family: "bernard";
   src: url("../Fonts/BernardMTCondensed.ttf");
 }
-
+  
 @font-face{
   font-family: "calibrib";
   src: url("../Fonts/CalibriBold.ttf");
 }
-
+  
 body{
   background-color: rgb(166, 166, 166);
   margin: 2% 5% 0 5%;
@@ -18,7 +18,6 @@ header{
   text-align: center;
   padding: 10px 0;
   width: 100%;
-  
 }
 
 header h1{
@@ -71,71 +70,59 @@ nav ul li input{
 }
 
 main{
-  text-align: justify;
+  padding-bottom: 40px;
 }
 
 main h3{
   text-align: center;
   font-family: "bernard";
-  font-size: 28pt;
-}
-
-main h4{
-  font-family: "bernard";
   font-size: 20pt;
+  margin: 0;
+  padding-bottom: 40px;
 }
 
 main p{
-  font-family: "calibib";
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 13pt;
+  margin: 0;
 }
 
-.wrapper{
-  width: 95%;
-  margin: 0px auto;
+.motores_img{    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding-top: 15px;
 }
 
-article .columL{
+main .column img{
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.column {
   display: inline-block;
-  width: 50%;
-  vertical-align: top;
-  padding: 0px 15px;
-}
-
-article .columR{
-  display: inline-block;
-  width: 35%;
+  width: 47%;
   vertical-align: middle;
-  padding: 0px 60px;
 }
 
-.left{
+.row {
   display: inline-block;
-  width: 45%;
-  vertical-align: top;
+  width: 47%;
+  vertical-align: middle;
+  padding-bottom: 15px;
 }
-
-.right{
-  display: inline-block;
-  width: 45%;
-  vertical-align: top;
-}
-
-article ul li{
-  font-family: "calibib";
-  font-size: 13pt;
-}
-
-article ul li img{
-    display: block;
-    margin: 0 auto;
-    max-width: 30%;
-    width: 30%;
-    padding: 5px 0;
+  
+  /* Clear floats after image containers */
+main .row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 footer{
-  margin: 0 -5% 0 -5%;
+  margin: 10px -5% 0 -5%;
   padding: 2px 0;
   background-color: black;
   font-family: "calibrib";

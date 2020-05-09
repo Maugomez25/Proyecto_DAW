@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <title>Tu Autopedia</title>
 
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/coches.css">
 
     </head>
 
@@ -18,43 +18,51 @@
 
         <nav>
             <ul>
-                <li><h5>Inicio</h5></li>
-                <li><h5>Décadas</h5></li>
-                <li><h5>Marcas</h5></li>
-                <li><h5>Países</h5></li>
-                <li><h5>Cilindrada</h5></li>
+                <li><a href="./index.html" target="_self">Inicio</a></li
+                ><li><a href="./decadas.html" target="_self">Décadas</a></li
+                ><li><a href="./marcas.html" target="_self">Marcas</a></li
+                ><li><a href="./paises.html" target="_self">Países</a></li
+                ><li><a href="./cilindrada.html" target="_self">Cilindrada</a></li
+                ><li style="background-color: white; padding-left: 5px; width: 23px;"><img src="./Pictures/lupa.png" alt="Busqueda"/></li>
+                <li style="background-color: white;"><input type="text"></li>
             </ul>
         </nav>
 
         <main>
-            <h2>Nissan GTR – 400R</h2>
-            <img src="./Pictures/400r_nismo.jpg" alt="GTR 400R">
-            <table>
-                <tr>
-                    <th>Potencia</th>
-                    <td>400 Hp a 6,800 rpm</td>
-                </tr>
-                <tr>
-                    <th>Torque</th>
-                    <td>346.6 lb/ft a 4,400 rpm</td>
-                </tr>
-                <tr>
-                    <th>Motor</th>
-                    <td>Seis cil. en línea</td>
-                </tr>
-                <tr>
-                    <th>Cilindrada</th>
-                    <td>Aprox. 2,800 cm^3</td>
-                </tr>
-                <tr>
-                    <th>Peso</th>
-                    <td>1550 Kg</td>
-                </tr>
-                <tr>
-                    <th>0 a 100 Km/h</th>
-                    <td>4.0 s</td>
-                </tr>
-            </table>
+            <div class="left">                
+                <h3>Nissan GTR – 400R</h3>
+                <img src="./Pictures/400r_nismo.jpg" alt="GTR 400R">
+            </div>
+            <div class="right">   
+                <h4>Ficha Técnica</h4>             
+                <table>
+                    <tr>
+                        <th>Potencia</th>
+                        <td>400 Hp a 6,800 rpm</td>
+                    </tr>
+                    <tr>
+                        <th>Torque</th>
+                        <td>346.6 lb/ft a 4,400 rpm</td>
+                    </tr>
+                    <tr>
+                        <th>Motor</th>
+                        <td>Seis cil. en línea</td>
+                    </tr>
+                    <tr>
+                        <th>Cilindrada</th>
+                        <td>Aprox. 2,800 cm^3</td>
+                    </tr>
+                    <tr>
+                        <th>Peso</th>
+                        <td>1550 Kg</td>
+                    </tr>
+                    <tr>
+                        <th>0 a 100 Km/h</th>
+                        <td>4.0 s</td>
+                    </tr>
+                </table>
+            </div>
+
             <article>
                 <p>
                     GTR son tal vez las siglas más representativas del mundo automotriz de los años 90. Fue en esta época
@@ -69,15 +77,17 @@
                     Este auto fue tan especial para Nissan que sólo se fabricaron 44 unidades para distribuir en todo el
                     mundo y actualmente se considera un auto moderno de colección.
                     Sin lugar a duda, el 400R es el mayor R33 jamás fabricado y uno de los mayores exponentes de los
-                    deportivos japoneses de los 90 que marcaron las tendencias de la década.
-                </br></br>
-                    Artículo consultado: https://www.diariomotor.com/2016/01/20/nissan-skyline-gt-r-nismo-400r/
+                    deportivos japoneses de los 90 que marcaron las tendencias de la década.             
                 </p>
+                <div class="ref">                    
+                    Artículo consultado: 
+                    <a href="https://www.diariomotor.com/2016/01/20/nissan-skyline-gt-r-nismo-400r/" target="_blank">https://www.diariomotor.com/2016/01/20/nissan-skyline-gt-r-nismo-400r/</a>
+                </div>
             </article>
         </main>
 
         <footer>
-            Tu Autopedia 2020
+            <h4>Tu Autopedia 2020</h4>
         </footer>
 
     </body>

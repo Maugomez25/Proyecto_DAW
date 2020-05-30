@@ -1,0 +1,16 @@
+[
+    {
+        "modelo" : "modelo",
+        "marca" : "marca",
+        "pais" : "pais",
+        "cilidrada" : "cilidrada",
+        "decada" : "decada",
+        "potencia" : "hp",
+        "torque" : "torque",
+        "motor" : "motor",
+        "peso" : "kg",
+        "tiempo" : "s",
+        "volumen" : "cm3",
+        "historia" : "Lorem ipsum"
+    }
+]

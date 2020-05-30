@@ -10,6 +10,7 @@
         "peso" : "kg",
         "tiempo" : "s",
         "cilindrada" : "cm3",
-        "historia" : "Lorem ipsum"
+        "historia" : "Lorem ipsum",
+        "url" : "url"
     }
 ]

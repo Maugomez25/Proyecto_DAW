@@ -29,7 +29,7 @@ header h1{
 }
 
 nav{
-    width: 100%;    
+    width: 100%;
 }
 
 nav ul{
@@ -40,12 +40,12 @@ nav ul{
 }
 
 nav ul li{
-    display: inline-block;
-    margin: 0;
-    padding: 5px 0;
-    width: 15.5%;
-    text-align: center;
-    background-color: rgb(68, 114, 196);
+  display: inline-block;
+  margin: 0;
+  padding: 5px 0;
+  width: 12.91%;
+  text-align: center;
+  background-color: rgb(68, 114, 196);
 }
 
 nav ul li a{
@@ -61,7 +61,7 @@ nav ul li a:hover{
 }
 
 nav ul li img{
-    width: 22px; 
+    width: 22px;
     height: 22px;
 }
 
@@ -86,8 +86,8 @@ main p{
     font-size: 13pt;
     margin: 0;
 }
-  
-.marcas_img img{    
+
+.marcas_img img{
     display: block;
     margin: 0 auto;
     max-width: 30%;
@@ -115,7 +115,7 @@ main .column img{
     padding-left: 30px;
 }
 
-  
+
   /* Clear floats after image containers */
 main .row::after {
     content: "";

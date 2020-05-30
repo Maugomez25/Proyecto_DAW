@@ -2,12 +2,12 @@
   font-family: "bernard";
   src: url("../Fonts/BernardMTCondensed.ttf");
 }
-  
+
 @font-face{
   font-family: "calibrib";
   src: url("../Fonts/CalibriBold.ttf");
 }
-  
+
 body{
   background-color: rgb(166, 166, 166);
   margin: 2% 5% 0 5%;
@@ -43,7 +43,7 @@ nav ul li{
   display: inline-block;
   margin: 0;
   padding: 5px 0;
-  width: 15.5%;
+  width: 12.91%;
   text-align: center;
   background-color: rgb(68, 114, 196);
 }
@@ -61,7 +61,7 @@ nav ul li a:hover{
 }
 
 nav ul li img{
-  width: 22px; 
+  width: 22px;
   height: 22px;
 }
 
@@ -87,7 +87,7 @@ main p{
   margin: 0;
 }
 
-.motores_img{    
+.motores_img{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -113,7 +113,7 @@ main .column img{
   vertical-align: middle;
   padding-bottom: 15px;
 }
-  
+
   /* Clear floats after image containers */
 main .row::after {
   content: "";

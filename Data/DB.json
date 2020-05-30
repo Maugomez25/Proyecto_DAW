@@ -3,14 +3,13 @@
         "modelo" : "modelo",
         "marca" : "marca",
         "pais" : "pais",
-        "cilidrada" : "cilidrada",
+        "motor" : "motor",
         "decada" : "decada",
         "potencia" : "hp",
         "torque" : "torque",
-        "motor" : "motor",
         "peso" : "kg",
         "tiempo" : "s",
-        "volumen" : "cm3",
+        "cilindrada" : "cm3",
         "historia" : "Lorem ipsum"
     }
 ]

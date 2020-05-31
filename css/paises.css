@@ -69,53 +69,36 @@
     width: 200px;
   }
 
-  main h3{
+  main h1{
     text-align: center;
     font-family: "bernard";
-    font-size: 20pt;
+    font-size: 40pt;
     margin: 10px 0 0 0;
     padding-bottom: 40px;
   }
 
-  main p{
+/*  main p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 13pt;
     margin: 0;
   }
-
-  .bandera_img img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    padding-top: 15px;
+*/
+  #Países .bandera_img{
+      display: inline-block;
+      width: 300px;
+      vertical-align: top;
+      text-align: center;
+      padding-left: 50px;
   }
 
-  main .column img{
-    display: block;
-    margin: 0 auto;
-    max-width: 90%;
+  #Países .bandera_img img{
+      width: 200px;
+      height:200px;
+      padding-left: 20px;
+      padding-bottom:50px;
+
   }
 
-  .column {
-    display: inline-block;
-    width: 47%;
-    vertical-align: middle;
-  }
-
-  .row {
-    display: inline-block;
-    width: 47%;
-    vertical-align: middle;
-    padding-bottom: 15px;
-  }
-
-    /* Clear floats after image containers */
-  main .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 
   footer{
     margin: 10px -5% 0 -5%;

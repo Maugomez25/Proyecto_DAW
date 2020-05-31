@@ -86,7 +86,7 @@ main label{
   font-size: 15pt;
 }
 
-main table td{
+main .column table td{
   padding-bottom: 10px;
 }
 

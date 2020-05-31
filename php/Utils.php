@@ -20,6 +20,7 @@ function saveJSON($modelo, $marca, $pais, $motor, $decada, $hp, $torque, $kg, $t
 
     if($data = loadJSON(FJSON)){
         $data[] = [
+                "id" => 0,
                 "modelo" => $modelo,
                 "marca" => $marca,
                 "pais" => $pais,
@@ -45,6 +46,19 @@ function readJSON(){
         return json_decode($data, true);
     }
     return false;
+}
+
+function deleteIndex($index){
+    $file = readJSON();
+
+    if($file){
+        unset($file[$index]);
+        $file = array_values($file);
+        return writeJSON($file,FJSON);        
+    }else{
+        return false;
+    }
+
 }
 
 ?>

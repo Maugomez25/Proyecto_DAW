@@ -26,92 +26,123 @@
             require_once dirname(__FILE__) . "/headerAdmin.php";
         ?>
 
-        <main class="wrapper">
+        <main>
 
-            <h2>Bienvenido!</h2>
+            <h3>Bienvenido!</h3>
 
-            <h4>Sitio para agregar autos a la base de datos</h4>
-
-            <?php 
-                if(isset($result)){
-            ?>
-                    <h5><?php echo $result?></h5>
-            <?php 
-                }
-            ?>
-
-            <form class="" action="../php/AdminForm.php" method="post">    
-
-                <label for="marca">Marca:</label>
-                <select name="marca" id="marca" required>
-                    <option value="Aston Martin">Aston Martin</option>   
-                    <option value="BMW">BMW</option>         
-                    <option value="Ferrari">Ferrari</option>
-                    <option value="Ford">Ford</option>
-                    <option value="Jaguar">Jaguar</option>
-                    <option value="Nissan">Nissan</option>
-                    <option value="Porsche">Porsche</option>
-                    <option value="Subaru">Subaru</option>
-                    <option value="Toyota">Toyota</option>
-                </select>
-                <br>
-
-                <label for="modelo">Modelo:</label>
-                <input type="text" name="modelo" id="modelo" required/><br>
-   
-                <label for="potencia">Potencia (Hp):</label>
-                <input type="number" name="potencia" id="potencia" step="0.01" required/><br>
-
-                <label for="torque">Torque (lb ft):</label>
-                <input type="number" name="torque" id="torque" step="0.01" required/><br>
+            <div class="wrapper"> 
                 
-                <label for="motor">Motor:</label>
-                <select type="text" name="motor" id="motor" required>
-                    <option value="4">4 cilindros</option>
-                    <option value="6">6 cilindros</option>
-                    <option value="8">8 cilindros</option>
-                </select>
-                <br>
-
-                <label for="cilindrada">Cilindrada:</label>
-                <input type="number" name="cilindrada" id="cilindrada" step="0.01" required /><br>
-
-                <label for="peso">Peso:</label>
-                <input type="number" name="peso" id="peso" step="0.01" required /><br>
+                <h4>Sitio para agregar autos a la base de datos</h4><br>
+    
+                <?php 
+                    if(isset($result)){
+                ?>
+                        <h4><?php echo $result?></h4>
+                <?php 
+                    }
+                ?>
                 
-                <label for="pais">País:</label>
-                <select name="pais" id="pais" required>
-                    <option value="Alemania">Alemania</option>
-                    <option value="Italia">Italia</option>
-                    <option value="Japón">Japón</option>
-                    <option value="UK">UK</option>
-                    <option value="USA">USA</option>
-                </select>
-                <br>
+                <div class="wrapper">
+                    <form class="" action="../php/AdminForm.php" method="post">    
+                        
+                        <table class="column">
+                            <tbody>
+                                <tr>
+                                    <td><label for="imagen">Img. nombre:</label></td>
+                                    <td><input type="text" name="imagen" id="imagen" required /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="marca">Marca:</label></td>
+                                    <td>                    
+                                        <select name="marca" id="marca" required>
+                                            <option value="Aston Martin">Aston Martin</option>   
+                                            <option value="BMW">BMW</option>         
+                                            <option value="Ferrari">Ferrari</option>
+                                            <option value="Ford">Ford</option>
+                                            <option value="Jaguar">Jaguar</option>
+                                            <option value="Nissan">Nissan</option>
+                                            <option value="Porsche">Porsche</option>
+                                            <option value="Subaru">Subaru</option>
+                                            <option value="Toyota">Toyota</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="modelo">Modelo:</label></td>
+                                    <td><input type="text" name="modelo" id="modelo" required/></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="potencia">Potencia (Hp):</label></td>
+                                    <td><input type="number" name="potencia" id="potencia" step="0.01" required/></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="torque">Torque (lb ft):</label></td>
+                                    <td><input type="number" name="torque" id="torque" step="0.01" required/></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="motor">Motor:</label></td>
+                                    <td>
+                                        <select type="text" name="motor" id="motor" required>
+                                            <option value="4">4 cilindros</option>
+                                            <option value="6">6 cilindros</option>
+                                            <option value="8">8 cilindros</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="cilindrada">Cilindrada:</label></td>
+                                    <td><input type="number" name="cilindrada" id="cilindrada" step="0.01" required /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="peso">Peso:</label></td>
+                                    <td><input type="number" name="peso" id="peso" step="0.01" required /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="pais">País:</label></td>
+                                    <td>
+                                        <select name="pais" id="pais" required>
+                                            <option value="Alemania">Alemania</option>
+                                            <option value="Italia">Italia</option>
+                                            <option value="Japón">Japón</option>
+                                            <option value="UK">UK</option>
+                                            <option value="USA">USA</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="decada">Década:</label></td>
+                                    <td>
+                                        <select name="decada" id="decada" required>
+                                            <option value="60">60's</option>
+                                            <option value="70">70's</option>
+                                            <option value="80">80's</option>
+                                            <option value="90">90's</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="tiempo">0 a 100km/h:</label></td>
+                                    <td><input type="number" name="tiempo" id="tiempo" step="0.01" required /></td>
+                                </tr>
+                            </tbody>
+                        </table>  
+                        
+                        <div class="column">
+                            <img src="../Pictures/shelby_cobra.png" alt="shelby cobra">
+                        </div>
+        
+                        <label style="display: block;" for="historia">Historia del modelo:</label>
+                        <input style="width: 70%; height: 80px" type="text" name="historia" id="historia" required /><br>
+        
+                        <div class="botones">
+                            <input type="submit" name="save" value="Submit" />
+                            <input type="reset" value="Reset">
+                        </div>
+        
+                    </form>
+                </div>
+            </div>
 
-                <label for="decada">Década:</label>
-                <select name="decada" id="decada" required>
-                    <option value="60">60's</option>
-                    <option value="70">70's</option>
-                    <option value="80">80's</option>
-                    <option value="90">90's</option>
-                </select>
-                <br>
-
-                <label for="tiempo">0 a 100km/h:</label>
-                <input type="number" name="tiempo" id="tiempo" step="0.01" required /><br>
-
-                <label for="imagen">Img.Auto (nombre):</label>
-                <input type="text" name="imagen" id="imagen" required /><br>
-
-                <label for="historia">Historia del modelo:</label>
-                <input type="text" name="historia" id="historia" height="40" required /><br>
-
-                <input type="submit" name="save" value="Registrar" />
-
-                <input type="reset" value="Resetear">
-
-            </form>
 
         </main>
 

@@ -1,8 +1,11 @@
 <?php
 require_once dirname(__FILE__) . "/Utils.php";
 
-if( strtolower($_SERVER["REQUEST_METHOD"]) === "post" ){
+if(isset($_GET["id"])){
+    var_dump($_GET["id"]);
+}
 
+if( strtolower($_SERVER["REQUEST_METHOD"]) === "post" ){
     $modelo = isset($_POST["modelo"]) ? $_POST["modelo"] : null;
     $marca = isset($_POST["marca"]) ? $_POST["marca"] : null;
     $pais = isset($_POST["pais"]) ? $_POST["pais"] : null;
@@ -19,16 +22,16 @@ if( strtolower($_SERVER["REQUEST_METHOD"]) === "post" ){
     if( !empty($modelo) && !empty($marca) && !empty($pais) && !empty($motor) && !empty($decada)){
 
         $result = false;
-        $result = saveJSON($modelo, $marca, $pais, $motor, $decada, $potencia, $torque, $peso, $tiempo, $cilindrada, $historia, $imagen);
+        $result = modifyIndex($_GET["id"],$modelo, $marca, $pais, $motor, $decada, $potencia, $torque, $peso, $tiempo, $cilindrada, $historia, $imagen);
         
         if($result){
-            header("Location: ../admin/agregar.php?result=1");
+            header("Location: ../admin/list.php?action=modify");
         }
         else{
-            header("Location: ../admin/agregar.php?result=0");
+            header("Location: ../admin/list.php?action=modify&error=0");
         }
         
 
-    }
+    } 
 
 }

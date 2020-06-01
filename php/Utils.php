@@ -61,4 +61,29 @@ function deleteIndex($index){
 
 }
 
+function modifyIndex($index, $modelo, $marca, $pais, $motor, $decada, $hp, $torque, $kg, $tiempo, $cilin, $historia, $url){
+    $file = readJSON();
+    $urlInicio = "./Pictures/";
+
+    if($file){
+        $file[$index]["modelo"] = $modelo;
+        $file[$index]["marca"] = $marca;
+        $file[$index]["pais"] = $pais;
+        $file[$index]["motor"] = $motor;
+        $file[$index]["decada"] = $decada;
+        $file[$index]["potencia"] = $hp;
+        $file[$index]["torque"] = $torque;
+        $file[$index]["peso"] = $kg;
+        $file[$index]["tiempo"] = $tiempo;
+        $file[$index]["cilindrada"] = $cilin;
+        $file[$index]["historia"] = $historia;
+        $file[$index]["url"] = $urlInicio . $url;     
+        return writeJSON($file,FJSON); 
+    }
+    else{
+        return false;
+    }
+    
+}
+
 ?>

@@ -98,7 +98,14 @@ main .botones{
 
 main .botones input{
   margin-left: 25px;
-  width: 80px;
+  width: 90px;
+  text-align: center;
+}
+
+main form textarea{
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+  width: 70%;
 }
 
 .wrapper{

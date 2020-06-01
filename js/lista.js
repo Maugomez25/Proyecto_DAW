@@ -104,5 +104,5 @@ function deleteItem(button){
 }
 
 function modifyItem(button){
-    console.log("modificar" + button.value);
+    window.location.href = "../admin/modify.php?id=" + button.value;
 }

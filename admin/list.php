@@ -8,6 +8,8 @@
         }elseif(!strcmp($action,"modify")){
             $str = "Click para modificar";
         }
+    }else{
+        header("Location: ./agregar.php");
     }
 
 ?>

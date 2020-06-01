@@ -132,8 +132,7 @@
                         </div>
         
                         <label style="display: block;" for="historia">Historia del modelo:</label>
-                        <input style="width: 70%; height: 80px" type="text" name="historia" id="historia" required /><br>
-        
+                        <textarea rows="10" cols="80" name="historia" id="historia" required></textarea>             
                         <div class="botones">
                             <input type="submit" name="save" value="Submit" />
                             <input type="reset" value="Reset">

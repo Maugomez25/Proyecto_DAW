@@ -57,6 +57,7 @@ function buildItem(data){
 
     var td2 = document.createElement("td");
     td2.innerHTML = data.modelo;
+    var modelo = data.modelo;
 
     var td3 = document.createElement("td");
     td3.innerHTML = data.marca;
@@ -77,7 +78,7 @@ function buildItem(data){
 
     if(action == "delete"){
         button.name = "eliminar";
-        button.addEventListener("click", function(){ deleteItem(button)});
+        button.addEventListener("click", function(){ deleteItem(button,modelo)});
         button.innerHTML = "Eliminar";
     }
     else if(action == "modify"){
@@ -99,8 +100,10 @@ function buildItem(data){
     return tr
 }
 
-function deleteItem(button){
-    window.location.href = "../php/delete.php?id=" + button.value;
+function deleteItem(button, carro){
+    var confirmed = confirm("Desea eliminar carro: " + carro);
+    if(confirmed)
+        window.location.href = "../php/delete.php?id=" + button.value;
 }
 
 function modifyItem(button){

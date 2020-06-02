@@ -45,6 +45,30 @@ function displayPais(pais){
     execute();                 
 }
 
+function displayMotor(motor){   
+    selected = motor;
+    atribute = 'motor';
+    if(place != null){
+        while (place.lastElementChild) {
+            place.removeChild(place.lastElementChild);
+        }
+    }    
+    place = document.querySelector("#list1");
+    execute();                 
+}
+
+function displayDec(decada){   
+    selected = decada;
+    atribute = 'decada';
+    if(place != null){
+        while (place.lastElementChild) {
+            place.removeChild(place.lastElementChild);
+        }
+    }    
+    place = document.querySelector("#list1");
+    getJSON("./Data/DB.json", loadList);                  
+}
+
 function execute(){
     grayImages();
     getJSON("./Data/DB.json", loadList); 
@@ -90,11 +114,24 @@ function loadList(data){
         specsDiv.className = "column";
 
         var specs = document.createElement("p");
-        specs.innerHTML =   "Modelo: " + carros[i].modelo + '<br>' + 
-                            "País: " + carros[i].pais + '<br>' + 
-                            "Motor: " + carros[i].motor + ' cilindros<br>' +
-                            "Década: " + carros[i].decada + "s"
-        ;
+        specs.innerHTML =   "Modelo: " + carros[i].modelo + '<br>';
+
+        if(atribute != 'marca'){
+            specs.innerHTML += "Marca: " + carros[i].marca + '<br>';
+        }
+
+        if(atribute != 'pais'){
+            specs.innerHTML += "País: " + carros[i].pais + '<br>';
+        }
+
+        if(atribute != 'motor'){
+            specs.innerHTML += "Motor: " + carros[i].motor + ' cilindros<br>';
+        }
+
+        if(atribute != 'decada'){
+            specs.innerHTML += "Década: " + carros[i].decada + "s";
+        }
+
         specsDiv.appendChild(specs);
         row.appendChild(specsDiv);
         place.appendChild(row);

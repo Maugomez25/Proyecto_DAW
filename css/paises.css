@@ -77,28 +77,94 @@
     padding-bottom: 40px;
   }
 
-/*  main p{
+ main p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 13pt;
     margin: 0;
   }
-*/
+
+  #Países {
+    text-align: center;
+  }
+
   #Países .bandera_img{
-      display: inline-block;
-      width: 300px;
-      vertical-align: top;
-      text-align: center;
-      padding-left: 50px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: center;
   }
 
   #Países .bandera_img img{
-      width: 200px;
-      height:200px;
-      padding-left: 20px;
-      padding-bottom:50px;
+    width: 90%;
+    padding-bottom:30px;
+    cursor: pointer;
 
   }
 
+
+main .column img{
+  display: block;
+  margin: 0;
+  max-width: 90%;
+  padding-right: 15px;
+}
+
+.column {
+  display: inline-block;
+  width: 45%;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+.row {
+  display: inline-block;
+  width: 47%;
+  height: 150px;
+  vertical-align: middle;
+  padding-bottom: 15px;
+}
+
+.notselected{
+  filter: grayscale(90%);
+}
+
+.container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: rgb(68, 114, 196);
+  color: white;
+  font-size: 12px;
+  padding: 16px 32px;
+}
 
   footer{
     margin: 10px -5% 0 -5%;

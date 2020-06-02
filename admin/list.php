@@ -25,7 +25,7 @@
 
         <link rel="stylesheet" href="../css/admin.css">
         <link rel="stylesheet" href="../css/Adminlist.css">
-
+        <script type="text/javascript" src="../js/Utils.js"></script>
         <script type="text/javascript" src="../js/lista.js"></script>
 
     </head>

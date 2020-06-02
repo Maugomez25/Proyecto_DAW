@@ -67,8 +67,16 @@ nav ul li img{
   height: 22px;
 }
 
-nav ul li input{
-  width: 200px;
+#sesion{
+  padding-top: 10px;
+  padding-right: 2%;
+  text-align: right;
+}
+
+#sesion a{
+  color: red;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
 }
 
 main h3{

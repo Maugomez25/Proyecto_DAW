@@ -10,3 +10,9 @@
         ><li><a href="../index.html" target="_self">Página de usuario</a>
     </ul>
 </nav>
+
+<div id="sesion">
+    <div id="text">
+        <a href="../php/logout.php" target="_self">Cerrar sesión</a>
+    </div>
+</div>

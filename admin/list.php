@@ -1,4 +1,10 @@
 <?php
+    session_start();
+    $isValidSession = isset($_SESSION["start_at"]);
+    if(!$isValidSession){
+        header("Location: ./login.php");
+    }
+
     $action = null;
     $str = null;
     if(isset($_GET["action"])){
@@ -25,7 +31,7 @@
 
         <link rel="stylesheet" href="../css/admin.css">
         <link rel="stylesheet" href="../css/Adminlist.css">
-
+        <script type="text/javascript" src="../js/Utils.js"></script>
         <script type="text/javascript" src="../js/lista.js"></script>
 
     </head>

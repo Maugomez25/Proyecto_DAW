@@ -8,11 +8,13 @@
         <title>Tu Autopedia</title>
 
         <link rel="stylesheet" href="./css/marcas.css">
-
+        <script type="text/javascript" src="./js/Utils.js"></script>
+        <script type="text/javascript" src="./js/categorias.js"></script>
+        <script type="text/javascript" src="./js/busqueda.js"></script>
 
     </head>
 
-    <body>
+    <body onload="listaBusqueda()">
 
         <header>
             <h1>Tu Autopedia</h1>
@@ -24,138 +26,87 @@
               ><li><a href="./decadas.html" target="_self">Décadas</a></li
               ><li><a href="./marcas.html" target="_self">Marcas</a></li
               ><li><a href="./paises.html" target="_self">Países</a></li
-              ><li><a href="./cilindrada.html" target="_self">Cilindrada</a></li
-              ><li style="background-color: white; padding-left: 5px; width: 23px;"><img src="./Pictures/lupa.png" alt="Busqueda"/></li>
-              <li style="background-color: white;"><input type="text"></li>
+              ><li><a href="./cilindrada.html" target="_self">Motor</a></li
+              ><li><a href="./admin/login.php" target="_self">Admin</a></li
+              ><li><div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Buscar</button>   
+                <div id="myDropdown" class="dropdown-content">           
+                    <input type="text" placeholder="Buscar.." id="myInput" onkeyup="filterFunction()">
+                </div>
+              </div></li>
           </ul>
         </nav>
 
         <main>
+            <h1>Marcas</h1>
+            <section id="Marcas">
 
-
-            <div class="marcas_img">
-              <img src="./Pictures/porsche_logo.png" alt="Porsche">
-             <h3>
-              Porsche
-             </h3>
-            </div>
-
-            <div class="row">
-              <div class="column">
-                <a href="Porsche_959_80.html" target="_self">
-                    <img src="./Pictures/porsche_959.jpg" alt="porsche_959">
-                </a>
+              <div class="container"> 
+                <h3> Porsche</h3>
+                <img src="./Pictures/porsche_logo.png" alt="Porsche" onclick="displayMarca('Porsche')">                
               </div>
-              <div class="column">
-                <p>
-                  Modelo: Porsche 959 <br>
-                  País: Alemania <br>
-                  Cilindrada: 6 cil. Boxer <br>
-                  Década: 80s  <br>
-                </p>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="column">
-                <a href="Porsche_959_80.html" target="_self">
-                    <img src="./Pictures/porsche_959.jpg" alt="porsche_959">
-                </a>
+              <div class="container">
+                <h3> Nissan</h3>
+                <img src="./Pictures/nissan_logo.png" alt="Nissan" onclick="displayMarca('Nissan')">
               </div>
-              <div class="column">
-                <p>
-                  Modelo: Porsche 959 <br>
-                  País: Alemania <br>
-                  Cilindrada: 6 cil. Boxer <br>
-                  Década: 80s  <br>
-                </p>
-              </div>
-            </div>
 
-            <div class="marcas_img">
-              <img src="./Pictures/nissan_logo.png" alt="Nissan">
-             <h3>
-               Nissan
-             </h3>
-            </div>
-
-            <div class="row">
-              <div class="column">
-                <a href="GTR_400R.html" target="_self">
-                  <img src="./Pictures/400r_nismo.jpg" alt="400r_nismo">
-                </a>
+              <div class="container">
+                <h3>BMW</h3>
+                <img src="./Pictures/bmw_logo.jpg" alt="BMW" onclick="displayMarca('BMW')">
               </div>
-              <div class="column">
-                <p>
-                  Modelo: GTR 400R <br>
-                  País: Japón <br>
-                  Cilindrada: 6 cil. Línea <br>
-                  Década: 90s  <br>
-                </p>
-              </div>
-            </div>
+            </section>
 
-            <div class="row">
-              <div class="column">
-                <a href="300_ZX.html" target="_self">
-              <img src="./Pictures/300zx.png" alt="300zx" width="300px">
-              </a>
-
+            <section id="list1">
+              
+            </section>
+            
+            <section id="Marcas">
+              <div class="container">
+                <h3>Subaru</h3>
+                <img src="./Pictures/subaru_logo.png" alt="Subaru" onclick="displayMarca('Subaru')">
               </div>
-              <div class="column">
-                <p>
-                  Modelo: 300ZX <br>
-                  País: Japón <br>
-                  Cilindrada: 6 cil. V <br>
-                  Década: 90s  <br>
-                </p>
-              </div>
-            </div>
 
-            <div class="marcas_img">
-              <img src="./Pictures/jaguar_logo.png" alt="jaguar_logo">
-             <h3>
-              Jaguar
-             </h3>
-            </div>
-
-            <div class="row">
-              <div class="column">
-                <a href="Jaguar_E_type_60.html" target="_self">
-                <img src="./Pictures/1968_Jaguar_E_Type.jpg" alt="porsche_959" width="300px">
-              </a>
-
+              <div class="container">
+                <h3>Toyota</h3>
+                <img src="./Pictures/toyota_logo.png" alt="Toyota"  onclick="displayMarca('Toyota')">
               </div>
-              <div class="column">
-                <p>
-                  Modelo: E-Type <br>
-                  País: UK <br>
-                 Cilindrada: 6 cil. Línea <br>
-                  Década: 60s  <br>
-                </p>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="column">
-                <a href="Jaguar_E_type_60.html" target="_self">
-                <img src="./Pictures/1968_Jaguar_E_Type.jpg" alt="porsche_959" width="300px">
-              </a>
+              <div class="container">
+                <h3>Ford</h3>
+                <img src="./Pictures/ford_logo.png" alt="Ford" onclick="displayMarca('Ford')">
+              </div>
+            </section>
 
+            <section id="list2">
+
+            </section>
+            
+            <section id="Marcas">
+              <div class="container">
+                <h3>Aston Marti</h3>
+                <img src="./Pictures/aston_logo.jpg" alt="Aston Martin"  onclick="displayMarca('Aston Martin')" o>
               </div>
-              <div class="column">
-                <p>
-                  Modelo: E-Type <br>
-                  País: UK <br>
-                 Cilindrada: 6 cil. Línea <br>
-                  Década: 60s  <br>
-                </p>
+
+              <div class="container">
+                <h3>Ferrari</h3>
+                <img src="./Pictures/ferrari_logo.png" alt="Ferrari"  onclick="displayMarca('Ferrari')">
               </div>
-            </div>
+
+              <div class="container">
+                <h3> Jaguar</h3>
+                <img src="./Pictures/jaguar_logo.png" alt="Jaguar"  onclick="displayMarca('Jaguar')">
+              </div>
+            </section>
+
+            <section id="list3">
+
+            </section>
 
         </main>
 
-        <footer>
+
+      <footer>
           <h4>Tu Autopedia 2020</h4>
         </footer>
 

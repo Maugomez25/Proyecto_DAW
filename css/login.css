@@ -1,0 +1,86 @@
+@font-face{
+    font-family: "calibrib";
+    src: url("../Fonts/CalibriBold.ttf");
+  }
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;  
+    background-color:#003d6d;
+}
+
+header, footer{
+    background-color: #003d6d;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 0;
+}
+
+nav{
+    margin: 0;    
+}
+
+main{    
+    padding: 10px 0;
+    color: #FFFFFF;
+    font-weight: bold;    
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.button{
+    margin: 0 auto;
+}
+
+.error{
+    text-align: center;
+    color: #ff4900;
+    font-weight: bold;
+    margin: 0;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 50%;  
+    font-family: "calibrib"  
+}
+
+tr:nth-of-type(even){
+    background-color: RGB(207, 213, 234);
+}
+
+tr:nth-of-type(odd){
+    background-color: RGB(233, 235, 245);
+}
+
+td:nth-of-type(odd){
+    text-align: left;
+    width: 33%;
+}
+
+td{
+    border: 3px solid white;
+    text-align: center;
+    font-size: 24pt;
+    color: black; 
+}
+
+th{
+    border: 3px solid white;
+    text-align: center;
+    background-color:RGB(68, 114, 196);
+    font-size: 28pt;
+}
+
+input[type=text], [type=password]{  
+    width: 80%;
+}
+
+form div {
+    padding: 10px;
+}

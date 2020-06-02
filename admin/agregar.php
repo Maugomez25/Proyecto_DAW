@@ -1,4 +1,10 @@
 <?php
+    session_start();
+    $isValidSession = isset($_SESSION["start_at"]);
+    if(!$isValidSession){
+        header("Location: ./login.php");
+    }
+
     $result = null;
     if(isset($_GET["result"])){
         if($_GET["result"]){

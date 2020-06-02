@@ -86,7 +86,7 @@ function loadList(data){
         row.className = "row";
 
         var link = document.createElement("a");
-        link.href = "./index.html?modelo=" + carros[i].modelo;
+        link.href = "./fichatecnica.php?modelo=" + carros[i].modelo;
         link.target = "_self";
         link.className = "column";
 

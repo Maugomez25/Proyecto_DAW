@@ -1,6 +1,7 @@
 <?php
 
 define("FJSON", dirname(__FILE__,2) . "/Data/DB.json");
+define("USERJSON", dirname(__FILE__,2) . "/Data/users.json");
 
 function loadJSON($filePath){
 
@@ -43,6 +44,14 @@ function saveJSON($modelo, $marca, $pais, $motor, $decada, $hp, $torque, $kg, $t
 function readJSON(){
 
     if($data = file_get_contents(FJSON)){
+        return json_decode($data, true);
+    }
+    return false;
+}
+
+function readUsers(){
+
+    if($data = file_get_contents(USERJSON)){
         return json_decode($data, true);
     }
     return false;

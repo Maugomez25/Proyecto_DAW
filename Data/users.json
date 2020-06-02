@@ -1,0 +1,26 @@
+[
+    {
+        "username": "BrianAguilar",
+        "password": "12345",
+        "name": "Brian",
+        "lastname": "Aguilar"
+    },
+    {
+        "username": "MauricioGomez",
+        "password": "12345",
+        "name": "Mauricio",
+        "lastname": "Gomez"
+    },
+    {
+        "username": "UlisesFonseca",
+        "password": "12345",
+        "name": "Ulises",
+        "lastname": "Fonseca"
+    },
+    {
+        "username": "DavidReyes",
+        "password": "12345",
+        "name": "David",
+        "lastname": "Reyes"
+    }
+]
